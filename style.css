@@ -1,54 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
 :root {
-    --bg-color-sky-blue: #4981f2;
-    --bg-color-azul-royal: #578BF2;
-    --bg-color-azul-cornflower: #99B6F2;
-    --bg-color-azul-celeste: #91D7F2;
-    --bg-color-cinza-carvao: #262626;
+    --bg-color-primary: #22d3ee;
+    --bg-color-secondary: #a855f7;
+    --bg-color-tertiary: #1e293b;
+    --bg-color-neutral: #94a3b8;
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: var(--bg-color-cinza-carvao);
     color: white;
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    max-width: 1120px;
+    padding: 0 0.75rem; /* Espaçamento lateral (gutter) */
+    margin: 0 auto; /* Centraliza o bloco horizontalmente */
+}
+
+body {
+    background-color: var(--bg-color-tertiary);
 }
 
 header {
-    width: 100%;
     height: 100px;
-    border: 1px solid var(--bg-color-azul-royal);
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
     align-items: center;
-    background-color: var(--bg-color-azul-cornflower);
     margin: 50px 0px;
 }
 
 .logo {
-    width: 200px;
-    height: 70px;
-    border: 1px solid var(--bg-color-azul-royal);
+    width: 150px;
+}
 
+.logo img {
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    background-color: var(--bg-color-azul-cornflower);
-
 }
 
 nav ul li {
     padding-left: 10px;
-    background-color: var(--bg-color-azul-cornflower);
-
 }
 
 nav ul li a {
     text-decoration: none;
-    background-color: var(--bg-color-azul-cornflower);
     font-size: 25px;
+    color: var(--bg-color-neutral);
+}
 
+nav ul li a:hover {
+    color: white;
+}
+
+.btn_cv {
+    padding: 10px 20px;
+    background-color: var(--bg-color-primary);
+    color: var(--bg-color-neutral);
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_cv:hover {
+    color: white;
+    background-color: var(--bg-color-neutral);
+}
+
+.banner {
+    width: 100%;
+    height: 95vh;
+    background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner ul li {
+    list-style: inside;
+}
+
+.banner h1 {
+    padding: 20px 0;
+}
+
+.banner p {
+    padding: 20px 0;
+}
+
+.banner .buttons {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons .whatsapp {
+    text-decoration: none;
+    color: white;
+    background-color: var(--bg-color-primary);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.buttons .btn_pj {
+    text-decoration: none;
+    border: var(--bg-color-neutral) 1px solid;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.servicos {
+    background-color: #10151d;
 }
