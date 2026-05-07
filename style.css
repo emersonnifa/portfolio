@@ -5,6 +5,7 @@
     --bg-color-primary: #22d3ee;
     --bg-color-secondary: #a855f7;
     --bg-color-tertiary: #1e293b;
+    --bg-color-teste: #213149;
     --bg-color-neutral: #94a3b8;
 }
 
@@ -16,14 +17,19 @@
     font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .container {
     max-width: 1120px;
-    padding: 0 0.75rem; /* Espaçamento lateral (gutter) */
-    margin: 0 auto; /* Centraliza o bloco horizontalmente */
+    padding: 0 0.75rem;
+    margin: 0 auto;
 }
 
 body {
@@ -57,7 +63,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: var(--bg-color-neutral);
 }
 
@@ -65,17 +71,17 @@ nav ul li a:hover {
     color: white;
 }
 
-.btn_cv {
+.btn_blue {
     padding: 10px 20px;
     background-color: var(--bg-color-primary);
     color: var(--bg-color-neutral);
-    font-size: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     border-radius: 10px;
     text-decoration: none;
 }
 
-.btn_cv:hover {
+.btn_blue:hover {
     color: white;
     background-color: var(--bg-color-neutral);
 }
@@ -87,14 +93,26 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_text_banner {
+    margin: 0;
 }
 
 .banner ul li {
     list-style: inside;
+    color: var(--bg-color-primary);
 }
 
 .banner h1 {
     padding: 20px 0;
+    background: linear-gradient(20deg, var(--bg-color-primary), var(--bg-color-secondary), var(--bg-color-secondary), var(--bg-color-secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .banner p {
@@ -123,6 +141,108 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.servicos {
-    background-color: #10151d;
+.about {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--bg-color-tertiary);
+}
+
+.about .box_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px
+}
+
+.about .box_info .text {
+    width: 30%;
+    background-color: red;
+}
+
+.about .box_info .text p {
+    padding-top: 30px;
+}
+
+.about .box_info .caracteristicas {
+    width: 65%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.caracteristicas .box2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caracteristicas .box_servicos {
+    background-color: black;
+    width: 49%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.ecosist {
+    background-color: var(--bg-color-teste);
+    width: 100%;
+    height: 45vh;
+}
+
+.ecosist h2 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ecosist .carrossel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ecosist .carrossel .box_eco {
+    width: 100px;
+    height: 100px;
+    background-color: #22d3ee;
+}
+
+.ecosist .carrossel .box_eco img {
+    width: 100%;
+}
+
+.projetos {
+    width: 100%;
+    height: 800px;
+    background-color: #1e293b;
+}
+
+.projetos .text h2 {
+    padding: 50px 0 20px 20px;
+}
+
+.projetos .text .text-desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.projetos .text .text-desc p {
+    max-width: 500px;
+}
+
+.projetos .text .text-desc a {
+    text-decoration: none;
+    color: var(--bg-color-primary);
+}
+
+.projetos .box-proj {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.box-proj .proje {
+    max-width: 300px;
+    height: 400px;
+    background-color: var(--bg-color-teste);
+    text-align: left;
 }
