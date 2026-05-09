@@ -211,7 +211,7 @@ nav ul li a:hover {
 
 .projetos {
     width: 100%;
-    height: 800px;
+    height: 95vh;
     background-color: #1e293b;
 }
 
@@ -241,8 +241,117 @@ nav ul li a:hover {
 }
 
 .box-proj .proje {
-    max-width: 300px;
-    height: 400px;
+    max-width: 480px;
+    height: 450px;
     background-color: var(--bg-color-teste);
     text-align: left;
+    border-radius: 20px;
 }
+
+.proje .img-pj {
+    width: 100%;
+    height: 200px;
+    background-color: #a855f7;
+    border-radius: 20px 20px 0 0;
+}
+
+.proje .text-pj {
+    width: 85%;
+    margin: auto;
+}
+
+.text-pj h3,
+.text-pj span,
+.text-pj ul {
+    padding: 20px 0;
+}
+
+.text-pj ul {
+    display: flex;
+}
+
+.text-pj ul li {
+    list-style: none;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color: var(--bg-color-tertiary);
+    color: var(--bg-color-primary);
+}
+
+.text-pj a {
+    text-decoration: none;
+}
+
+.forms {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--bg-color-teste);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+
+}
+
+.forms .text {
+    width: 45%;
+    background-color: #a855f7;
+}
+
+.forms .text h2 {
+    padding: 20px 0;
+}
+
+.forms .text p {
+    padding: 20px 0;
+}
+
+.forms .text .cont {
+    display: flex;
+    padding: 5px 0;
+
+}
+
+.forms .text .cont svg {
+    background-color: var(--bg-color-teste);
+    padding: 12px 10px;
+    border: solid 1px var(--bg-color-neutral);
+    border-radius: 10px;
+}
+
+.forms .text .cont .info {
+    padding-left: 10px;
+
+}
+
+.forms .text .contatos {
+    display: flex;
+    padding-top: 30px;
+
+}
+
+.forms .text .contatos svg {
+    padding: 10px 8px;
+    background-color: #22d3ee;
+    border-radius: 70%;
+    margin-right: 5px;
+    border: solid 1px
+}
+
+.forms form {
+    width: 45%;
+    border: 1px solid var(--bg-color-neutral);
+    border-radius: 10px;
+    padding: 50px;
+    flex-direction: column;
+}
+
+
+.forms form .teste {
+
+}
+
+/* .forms form .teste {
+    width: 50%;
+    display: block;
+} */
